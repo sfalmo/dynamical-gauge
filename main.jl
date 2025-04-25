@@ -48,7 +48,7 @@ function plot_histograms(filename="data/current.jld2"; key="1", p=nothing)
     end
 end
 
-function run_simulations()
+function run_simulations(filename="data/current.jld2")
     N = 5
     L = 20.0
     T = 1.0
@@ -64,8 +64,6 @@ function run_simulations()
 
     # A_funcs = (xs -> 1, xs -> zero(xs))
     A_funcs = (xs -> sum(xs) / length(xs), xs -> ones(length(xs)) ./ length(xs))
-
-    filename = "data/current.jld2"
 
     n_Xs = 100000
     production_time = 3.15

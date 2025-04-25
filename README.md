@@ -3,7 +3,7 @@
 This is a proof-of-concept implementation of a 1D nonequilibrium molecular dynamics simulation which computes gauge correlation functions via automatic and finite initial-state time differentiation as described in:
 
 **Dynamical gauge invariance of statistical mechanics**  
-*Johanna Müller, Florian Sammüller, and Matthias Schmidt, to be published.*
+*Johanna Müller, Florian Sammüller, and Matthias Schmidt; [arXiv:2504.17599](https://arxiv.org/abs/2504.17599).*
 
 ## Instructions
 
@@ -27,13 +27,13 @@ Tar.extract("data.tar")
 include("plot_paper.jl")
 ```
 
-Run a custom nonequilibrium simulation:
+Check and adapt the settings of the run in `main.jl` and perform a custom nonequilibrium simulation:
 
 ```julia
 include("main.jl")
 ```
 
-Inspect the sampled gauge correlation functions:
+Inspect the sampled gauge correlation functions of the previous run:
 
 ```julia
 include("plot_all_histograms.jl")

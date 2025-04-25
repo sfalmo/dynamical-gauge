@@ -54,4 +54,4 @@ function plot_histograms(filename="data/current.jld2")
     end
 end
 
-plot_histograms("data/5WCA_harmonic_stronger_finite_diff.jld2")
+plot_histograms("data/current.jld2")
