@@ -23,7 +23,7 @@ Fetch pregenerated data (~2GB) and reproduce the plots from the manuscript:
 ```julia
 using Downloads, Tar
 Downloads.download("https://www.staff.uni-bayreuth.de/~bt306964/dynamical-gauge/data.tar", "data.tar")
-Tar.extract("data.tar")
+Tar.extract("data.tar", "data")
 include("plot_paper.jl")
 ```
 
